@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Angular2 Todo App </title>
+  </head>
+  <body>
+     <h1> Todo List </h1>
+
+     <p>
+
+       <ul >
+        <li *ngFor="let todo of data">
+          {{todo}} &nbsp; <a href="#">&times;</a>
+        </li>
+      </ul>
+      <input type="text" [(ngModel)] = "todo.title" >
+      <button (click)="addTodo()"> Add + </button>
+
+      
+  </body>
+</html>
